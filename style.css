@@ -1,0 +1,162 @@
+    
+:root {
+    --colore1: #492C1D;
+    --colore2: #5B5750;
+    --colore3: #7C99B4;
+}
+
+.bg-all {
+    background-color: var(--colore1);
+}
+.cursive {
+    font-family: 'Allura', cursive;
+    color: white;
+    
+}
+.bg-button-1{
+    background-color: var(--colore3) !important; 
+    border-color: white;
+}
+.animation-button{
+    animation-name: change-color;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes change-color {
+    0%  {background-color: var(--colore3) ;}
+    50% {background-color:var(--colore2);}
+    100%  {background-color: var(--colore3);}
+  }
+
+.animation-button-2{
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes scale {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.title
+{
+    color: var(--colore2) !important;
+    font-weight: 900;
+}
+
+body {
+    font-family: 'David Libre', serif;
+    color: white;    
+}
+
+.font-size-xl {
+    font-size: 20px;
+}
+.font-size-xxl {
+    font-size: 25px;
+}
+
+.text-shadow {
+    text-shadow: 4px 4px 8px var(--colore2) ;
+    color: white;
+}
+.my-10 {
+    margin-top: 200px !important;
+}
+.bg-all{
+    background: rgb(73,44,29);
+    background: linear-gradient(140deg, rgba(73,44,29,1) 43%, rgba(91,87,80,1) 83%);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.bg-section {
+    background: linear-gradient(140deg, rgba(73,44,29,1) 20%,transparent, rgba(73,44,29,1) 90%),url('./img/bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-navbar{
+    background-color: transparent ;
+    
+}
+.bg-section-2{
+    background: radial-gradient(circle, rgba(73,44,29,0.8) 44%, rgba(73,44,29,1) 100%), url('./img/locale.jpg');
+    background-size: cover;
+    background-position: center;  
+}
+
+.bg-section-3{
+    background: linear-gradient(140deg,rgba(91,87,80,0.8) 20%, rgba(73,44,29,0.7) 90%), url('./img/3164323e6f776aa4e858a61c6e0dec61-night-club-pole-dancing-background.jpg');
+    background-size: cover;
+    background-position: center;  
+}
+.bg-section-4{
+    background: linear-gradient(140deg,rgba(91,87,80,0.8) 20%, rgba(73,44,29,0.7) 90%), url('./img/Lap-Dance.jpg');
+    background-size: cover;
+    background-position: center;  
+}
+.over-box {
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+.over-img {
+    transition: 1s;
+}
+
+.over-box:hover .over-img {
+    transform: scale(1.1);
+}
+
+.py-10{
+    padding-top: 200px;
+}
+.py-15{
+    padding-top: 300px;
+    
+}
+.border-bottom-2{
+    border-bottom: 3px solid var(--colore3);    
+    
+}
+
+.img-2{
+    height: 232px !important;
+    width: 350px !important;
+}
+.product-label {
+    position: relative;
+    top: 45px;
+    left: 0px;
+    padding-left: 10px;
+    width: 90%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    z-index: 99;
+    background-color: beige;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.card-form {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
